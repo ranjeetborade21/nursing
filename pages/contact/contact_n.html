@@ -527,6 +527,16 @@
   // });
     }
 
+    $(window).on('resize', function(){
+      console.log('$( window ).width()::',$( window ).width());
+      if($( window ).width()<=900){
+        if($('nav#menuzord').find('a.showhide').length>=2){
+          $('nav#menuzord').find('a.showhide:eq(0)').remove();
+        }
+      }
+      
+    });
+
   </script>
 </body>
 
